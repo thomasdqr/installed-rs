@@ -47,6 +47,9 @@ impl App {
     pub fn version(&self) -> Cow<str> {
         self.get_value("DisplayVersion")
     }
+    pub fn icon(&self) -> Cow<str> {
+        self.get_value("DisplayIcon")
+    }
     pub fn dump(&self) -> String {
         self.reg
             .enum_values()
