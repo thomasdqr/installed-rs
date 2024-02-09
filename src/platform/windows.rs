@@ -50,6 +50,9 @@ impl App {
     pub fn icon(&self) -> Cow<str> {
         self.get_value("DisplayIcon")
     }
+    pub fn path(&self) -> Cow<str> {
+        self.get_value("InstallLocation")
+    }
     pub fn dump(&self) -> String {
         self.reg
             .enum_values()
